@@ -28,8 +28,6 @@ public class ExcellWriter {
                     BigDecimal bd = new BigDecimal(args[count++]);
                     Number number = new Number(j, i, bd.doubleValue());
                     sheet.addCell(number);
-                    if(count == 257)
-                        break;
                 }
             }
             wb.write();
